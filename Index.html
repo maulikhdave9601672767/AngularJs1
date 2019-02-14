@@ -1,0 +1,30 @@
+<html ng-app="onvio.accounts" >
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.22/angular-ui-router.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+    <script src="app.js"></script>
+
+    <script src="Component/Master/master-controller.js"></script>
+    <script src="Component/Master/master-route.js"></script>
+
+    <script src="Component/About/about-routing.js"></script>    
+
+    <script src="Component/Master/Project/project-routing.js"></script>
+
+    <script src="Services/JournalService.js"></script>
+    <script src="Services/Project.js"></script>
+
+
+    <style>.active { color: red; font-weight: bold; }</style>
+  </head>
+
+  <body ng-app="onvio.accounts">
+    <a ui-sref="MasterView.Projects" ui-sref-active="active">Master</a>
+    <a ui-sref="about" ui-sref-active="active">About</a>
+    
+
+    <ui-view></ui-view>
+  </body>
+</html>
